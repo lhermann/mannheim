@@ -1,0 +1,20 @@
+<div id="mobile-nav" class="c-wall jsWall">
+    <nav class="o-wrapper">
+
+        <div class="c-site-header c-site-header--transparent u-center u-right">
+            <button class="c-btn c-btn--primary c-btn--ghost c-btn--icon jsWallBtn"
+                data-target="#mobile-nav">
+                <i class="u-icon u-icon--large">&#xE5CD;</i>
+            </button>
+        </div>
+
+        <ul class="c-nav c-nav--vertical c-nav--animated">
+            {% for item in site.primary_menu %}
+                    <li class="c-nav__item">
+                        <a href="{{item.url}}" class="c-nav__link">{{item.label}}</a>
+                    </li>
+            {% endfor %}
+        </ul>
+
+    </nav>
+</div>

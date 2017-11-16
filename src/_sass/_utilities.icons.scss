@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+.u-icon {
+    display: inline-block;
+    vertical-align: -24%;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    letter-spacing: normal;
+    white-space: nowrap;
+    font-family: "Material Icons";
+    font-size: 150%;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.u-icon--large {
+    vertical-align: -32%;
+    font-size: 200%;
+}
+
+.u-icon--small {
+    vertical-align: -14%;
+    font-size: 100%;
+}

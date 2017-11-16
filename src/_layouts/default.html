@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de" class="page page--{{page.title | slugify}} {{layout.page-class}} {{page.page-class}} no-js">
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+        <main id="content" role="main">
+
+            {{ content }}
+
+        </main>
+
+        {% include footer.html %}
+
+        {% include foot.html %}
+    </body>
+
+</html>

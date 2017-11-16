@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #SECTION
+   ========================================================================== */
+
+.c-section {
+    &--gray-1 {
+        background-color: $c-gray-1;
+    }
+
+    &--gray-2 {
+        background-color: $c-gray-2;
+    }
+
+    &--primary {
+        background-image: $gradient-primary;
+        color: $c-white;
+    }
+}

@@ -1,0 +1,13 @@
+<ul class="c-nav c-nav--horizontal c-nav--underscore u-hidden-until@tablet">
+    {% for item in site.primary_menu %}
+            <li class="c-nav__item u-ml+@tablet">
+                <a href="{{item.url}}" class="c-nav__link">{{item.label}}</a>
+            </li>
+    {% endfor %}
+</ul>
+
+<div class="u-hidden-from@tablet">
+    <button class="c-btn c-btn--icon c-btn--primary c-btn--ghost jsWallBtn" data-target="#mobile-nav">
+        <i class="u-icon u-icon--large">&#xE5D2;</i>
+    </button>
+</div>

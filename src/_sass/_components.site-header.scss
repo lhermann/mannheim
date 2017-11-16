@@ -1,0 +1,39 @@
+/* ==========================================================================
+   #SITE-FOOTER
+   ========================================================================== */
+
+$header-height: $unit * 4;
+
+.c-site-header {
+    background-color: $c-white;
+    height: $header-height;
+
+    &--transparent {
+        background-color: transparent;
+    }
+}
+
+    .c-site-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-site-header__left,
+    .c-site-header__right {
+        display: inline-block;
+        height: $header-height;
+    }
+
+    .c-site-header__right {
+        order: 99;
+    }
+
+    .c-site-header__logo {
+        display: block;
+        padding: $unit-small 0;
+        height: 100%;
+
+        > img {
+            max-height: 100%;
+        }
+    }

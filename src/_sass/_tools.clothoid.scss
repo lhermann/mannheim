@@ -1,0 +1,23 @@
+///* ========================================================================
+//   #CLOTHOID
+//   ======================================================================== */
+
+// Mixin to generate a clothoid gradient
+// http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+//
+// .usage {
+//   @include clothoid-gradient(#fff, .5, 0);
+// }
+@mixin clothoid-gradient($color: #000, $alpha-from: 1, $alpha-to: 0, $direction: to bottom) {
+    $diff: $alpha-from - $alpha-to;
+    background-image: linear-gradient(
+        $direction,
+        rgba($color, $alpha-from) 0%,
+        rgba($color, $alpha-from - $diff*.7) 50%,
+        rgba($color, $alpha-from - $diff*.85) 65%,
+        rgba($color, $alpha-from - $diff*.925) 75.5%,
+        rgba($color, $alpha-from - $diff*.963) 82.85%,
+        rgba($color, $alpha-from - $diff*.981) 88%,
+        rgba($color, $alpha-to) 100%
+    );
+}

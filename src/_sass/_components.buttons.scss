@@ -1,0 +1,227 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+$c-btn-primary:         $c-primary;
+$c-btn-primary-hover:   $c-primary-dark;
+$c-btn-secondary:       $c-secondary;
+$c-btn-secondary-hover: $c-secondary-dark;
+
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+  transition: $global-transition;
+  border-radius: $global-radius;
+  border: 0;
+}
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+  background-color: $c-btn-primary;
+  background-size: 300% 100%;
+  background-position: 100%;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $c-white;
+    text-decoration: none; /* [4] */
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $c-btn-primary-hover;
+  }
+
+}
+
+.c-btn--secondary {
+  background-color: $c-btn-secondary;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $c-white;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $c-btn-secondary-hover;
+  }
+
+}
+
+.c-btn--white {
+  background-color: rgba($c-white, .8);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $c-text;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $c-white;
+  }
+
+}
+
+// .c-btn--tertiary {
+//   background-color: $c-gray-8;
+
+//   &,
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     color: $c-white;
+//     text-decoration: none;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     background-color: $c-gray-9;
+//   }
+
+// }
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+}
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
+}
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+$btn-ghost-border-width: 1px;
+
+.c-btn--ghost {
+  border: $btn-ghost-border-width solid currentColor;
+  padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &.c-btn--small {
+    padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+  }
+
+  &.c-btn--large {
+    padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
+  }
+
+  &.c-btn--primary {
+    color: $c-btn-primary;
+
+    &:hover,
+    &:focus {
+      color: $c-btn-primary-hover;
+    }
+
+  }
+
+  &.c-btn--secondary {
+    color: $c-btn-secondary;
+
+    &:hover,
+    &:focus {
+      color: $c-btn-secondary-hover;
+    }
+  }
+
+  &.c-btn--white {
+    color: rgba($c-white, .8);
+
+    &:hover,
+    &:focus {
+      color: $c-white;
+    }
+  }
+
+  // &.c-btn--tertiary {
+  //   color: $c-tertiary-btn-bg;
+
+  //   &:hover,
+  //   &:focus {
+  //     color: $c-tertiary-btn-bg-hover;
+  //   }
+
+  // }
+
+}
+
+
+/* ============================== */
+
+/**
+ * 1. shorter is visually more beautiful
+ */
+.c-btn--icon {
+    padding: 0;
+    width: $unit-large;
+    height: $unit-large - 3px; /* 1 */
+}
+
+.c-btn--disabled {
+    opacity: .5;
+    cursor: default;
+
+    &:hover {
+        background-position: 100%;
+    }
+}
+
+
