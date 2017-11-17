@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .c-section {
+    position: relative;
+
     &--gray-1 {
         background-color: $c-gray-1;
     }
