@@ -53,7 +53,7 @@ port: 4003
 primary_menu:
   -
     label: "Ich bin neu"
-    url: /ich-bin-neu/
+    url: /#ich-bin-neu
     menu:
       -
         label: "Laymen Ministries"
@@ -66,10 +66,10 @@ primary_menu:
         url: /prison-ministry/
   -
     label: "Wachsen"
-    url: /wachsen/
+    url: /#wachsen
   -
     label: "Dienste"
-    url: /diesnte/
+    url: /#diesnte
 
 
 footer_menu:
